@@ -1,0 +1,25 @@
+url: https://150kforabetterworld.netlify.com/
+
+exclude: ['_sass', '_src', '_grunt', 'node_modules', 'Gruntfile.js', 'package.json', 'README.md', 'Gemfile', 'build.sh']
+
+page_gen-dirs: true # uncomment, if you prefer to generate named folders
+
+page_gen:
+  - data: 'contentful.spaces.donor.thankYou'
+    template: 'thank-you'
+    name: 'name'
+    dir: 'thank-you'
+ 
+contentful:
+  spaces:
+    - donor: # Jekyll _data folder identifier - Required
+        space: h4gckunk8e0b         # Required
+        access_token: 4350f884f71c0c3fcfe9faaaabd6f0a91f074a71312bcc03e377cb3c25308d43  # Required
+        cda_query:                  # Optional
+          include: 1
+          limit: 300
+        all_entries: true           # Optional - Defaults to false, only grabbing the amount set on CDA Query
+        all_entries_page_size: 1000 # Optional - Defaults to 1000, maximum amount of entries per CDA Request for all_entries
+        content_types:              # Optional
+          cat: thankYou
+        individual_entry_files: false # Optional - Defaults to false

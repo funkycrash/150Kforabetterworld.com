@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en">
+
+{% assign websiteContent = site.data.contentful.spaces.donor.websiteContent[0] %}
+
+	<head>
+		<meta charset="utf-8">
+
+		<title>What Will 1000 Dollars Do</title>
+		{% include favicon.html %}
+		<link rel="stylesheet" href="/assets/css/app.min.css">
+	</head>
+
+	<body>
+		<style>
+
+    .noscroll {
+        position: fixed;
+        overflow: hidden;
+    }
+
+    #overlay {
+        display: none;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 100;
+        background: #e68526;
+    }
+
+    #spinner {
+        display: none;
+        position: fixed;
+        width: 40px;
+        height: 40px;
+        top: 50%;
+        left: 50%;
+        margin-top: -20px;
+        margin-left: -20px;
+        z-index: 101;
+        background-color: #ffffff;
+
+        -webkit-animation: sk-rotateplane 1.2s infinite ease-in-out;
+        animation: sk-rotateplane 1.2s infinite ease-in-out;
+    }
+
+    @-webkit-keyframes sk-rotateplane {
+        0% { -webkit-transform: perspective(120px) }
+        50% { -webkit-transform: perspective(120px) rotateY(180deg) }
+        100% { -webkit-transform: perspective(120px) rotateY(180deg)  rotateX(180deg) }
+    }
+
+    @keyframes sk-rotateplane {
+        0% {
+            transform: perspective(120px) rotateX(0deg) rotateY(0deg);
+            -webkit-transform: perspective(120px) rotateX(0deg) rotateY(0deg)
+        } 50% {
+            transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg);
+            -webkit-transform: perspective(120px) rotateX(-180.1deg) rotateY(0deg)
+        } 100% {
+            transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+            -webkit-transform: perspective(120px) rotateX(-180deg) rotateY(-179.9deg);
+        }
+    }
+
+</style>
+		<div id="overlay"></div>
+		<div id="spinner"></div>
+
+		<div class="foot-logo">
+			<img src="/assets/img/foot-logo.png" alt="">
+		</div>
+ 
+		<a href="#" class="speaker">
+		  <span></span>
+		</a>
+ 
+		<div class="reveal">
+
+			<div class="slides">
+
+				<section data-background="/assets/img/splash.jpg" id="first" style="display:none;" data-transition-speed="slow">
+					<h3 class="ml12 c-white">Thank you</h3>
+					<h3 class="ml12 c-white">{{page.title}}</h3><br/>
+
+					<p class="c-white">Here is what your gift has made possible:</p>
+					
+
+				</section>
+
+				<section data-background="linear-gradient(#badb1c, #ffffff)" data-background-transition="zoom"  data-autoslide="4500" data-transition-speed="slow">
+					<h3 class="c-black" style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">"Access to clean light and all its related enabling benefits is not a luxury item. It’s a human right, one we at <a style="color:#e68526;" href="//barefootcollege.org" target="_blank">Barefoot College</a> believe is the essential step to eradicating poverty."</h3><br/>
+					<p>-- Meagan Fallone, CEO of Barefoot College International</p>
+				</section>
+
+				<section data-background="linear-gradient(#badb1c, #ffffff)" data-background-transition="zoom" data-transition-speed="slow" data-autoslide="1500">
+					<h3 class="c-black">Your gift has enabled</h3>
+ 
+					<div class="grid">
+						<div class="col-1-3 fact">
+							<span class="fragment fade-in" data-autoslide="3000">
+									<img src="/assets/img/icons/women.png" />
+									<p>{{ websiteContent.gift_enabled1 }}</p> 
+							</span>
+							
+						</div>
+						<div class="col-1-3 fact">
+							<span class="fragment fade-in" data-autoslide="3000">
+								<img src="/assets/img/icons/lightbulb.png"/>
+								<p>{{ websiteContent.gift_enabled2 }}</p>
+							</span>
+						</div>
+						<div class="col-1-3 fact">
+							<span class="fragment fade-in"  data-autoslide="3000">
+								<img src="/assets/img/icons/house.png"/>
+								<p>{{ websiteContent.gift_enabled3 }}</p>
+							</span>
+						</div>
+					</div> 
+				</section>
+
+
+				<section data-background="linear-gradient(#fee036, #ffffff)" data-autoslide="3500" data-transition-speed="slow" class="slideshow">
+					<div class="grid">
+						<div class="col-1-2 raised-box">
+							<div class="image-slideshow" style="background-image:url(/assets/img/slideshow-06.jpg)">
+							</div>
+						</div>
+
+						<div class="col-1-2 flex-center">
+							<h3 class="c-black">Your support means more women will be trained to solar electrify their villages around the world.
+							</h3>
+						</div>
+					</div>
+				</section>
+
+
+				<section data-background="linear-gradient(#fee036, #ffffff)" data-autoslide="4500" data-transition-speed="slow" class="slideshow">
+					<div class="grid">
+						<div class="col-1-2 raised-box">
+							<div class="image-slideshow" style="background-image:url(/assets/img/slideshow-05.jpg)">
+							</div>
+						</div>
+ 
+						<div class="col-1-2 flex-center">
+							<h4 class="c-black" style="margin-left: 50px;">"Never did I think that I would be a solar engineer. It was my two sons who encouraged me. They saw this project as my opportunity to do something for the community of Santa Teresa, and help change all our lives."<br/>
+							 -- Florentina Cloc, Solar Mama</h4>
+						</div>
+					</div>
+				</section>
+
+
+
+				<section data-background-video="/assets/video/video.mp4" data-background-transition="convex" data-autoslide="24000" data-transition-speed="slow">
+					<!-- VIDEO -->
+				</section>
+ 
+
+				<section data-background="linear-gradient(#e68526, #ffffff)" data-background-transition="zoom" data-autoslide="2000" data-transition-speed="slow">
+					<h3 class="text-shadow c-white max-width">Thank you from</h3><br/>
+					<img src="/assets/img/barefoot-colors.png" width="300px" alt="barefoot college logo"/>
+					<br/>
+					
+				</section> 
+
+				<section data-background="linear-gradient(#badb1c, #ffffff)" data-background-transition="zoom" data-autoslide="9000" data-transition-speed="slow">
+					<h4 style="max-width: 80%;">Through our global Citizenship partnership with Barefoot College, Hogan Lovells empowers women and girls by:</h4><br/>
+					<p style="max-width: 50%; display:block; margin:0 auto;text-align: left;">
+						<span class="fragment" data-autoslide="2000">Training 400 women</span><br/> 
+						<span class="fragment" data-autoslide="3000">Solar electrifying 20,000 households</span> <br/>
+						<span class="fragment" data-autoslide="3000">Bringing light to 200,000 people</span> <br/>
+						<span class="fragment" data-autoslide="3000">And helping Barefoot achieve 7 of the 17 Sustainable Development Goals (SDGs).</span><br/>
+						<div id="final-screen-logo">
+							<img src="/assets/img/hl-logo.png" alt="HL logo"/>
+						</div>
+					</p>
+					
+
+				</section> 
+
+				<section data-background="linear-gradient(#badb1c, #ffffff)" data-background-transition="zoom" data-autoslide="2000" data-transition-speed="slow">
+					<h3 class="max-width">Help us #FlipTheSwitch</h3><br/>
+					<p class="max-width"  style="text-align: left;">{{ websiteContent.help_us }}</p><br/>
+					<p class="max-width" style="text-align: left;">Women are the changemakers. They are prepared for this moment in history to lead the way to a better life, economic growth, stronger communities and a better world. Walk Barefoot with us and leave your footprints for a better world.</p><br/>
+					<p class="max-width" style="text-align: left;">{{ websiteContent.help_us_email | markdownify }}</p>
+					<br/>
+
+					{% include share-icons.html %}
+					<br/>
+					<a href="javascript:window.location.reload(true);" class="c-white text-shadow">	
+						<img src="/assets/img/icons/replay.svg"/>
+					</a>
+				</section> 
+ 
+
+			</div>
+
+		</div>
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.7/howler.core.min.js"></script>
+
+		<script src="/assets/js/app.min.js"></script>
+
+		<script>
+			document.body.setAttribute("class", "noscroll");
+			document.getElementById("overlay").style.display = "block";
+			document.getElementById("spinner").style.display = "block";
+
+			window.onload = function() {
+				document.getElementById("spinner").style.display = "none";
+				document.getElementById("overlay").style.display = "none";
+
+				document.body.className = document.body.className.replace(/\bnoscroll\b/,'');
+			}
+		</script>
+
+	</body>
+</html>

@@ -1,0 +1,9 @@
+  "fields": {
+    "name": {
+      "en-US": "jacques chirac"
+    }
+  }
+
+
+curl -H 'Content-Type: application/json' -H 'X-Contentful-Content-Type: thankYou' -X PUT -d '{"fields":{"name": { "en-US": "jacquess chirac"}}}' https://api.contentful.com/spaces/mx7r0rwnochp/entries/thankYou?access_token=CFPAT-c729d6643bdcbd8a7ea3ea49b44f02ba0d468d331b8dba3ab46eee73d1f1594f
+curl -H 'Content-Type: application/json' -H 'X-Contentful-Content-Type: thankYou' -X PUT -d '{"fields":{"name": { "en-US": "Aaron S. Culter"}}}' https://api.contentful.com/spaces/mx7r0rwnochp/entries/thankYou?access_token=CFPAT-763fca4fb44874e08a3ab1d98dd3573e3ffacba5157e256a591406a687619f53

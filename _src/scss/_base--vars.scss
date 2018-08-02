@@ -1,0 +1,24 @@
+// Colors
+$orange:    #e68526;
+$yellow:    #fee036;
+$green:     #badb1c;
+$blue:      #1b59ff;
+
+// Mixins
+@mixin transition($length) {
+	transition: all $length ease-out !important;
+} 
+
+//fonts
+@font-face {
+    font-family: 'oswald';
+    src: url('/assets/fonts/Oswald-Bold.ttf') format('opentype');
+}
+@font-face {
+    font-family: 'open-sans';
+    src: url('/assets/fonts/OpenSansCondensed-Light.ttf') format('opentype');
+}
+
+$stack-title: 'oswald',  Helvetica;	
+$stack-content: 'open-sans', Helvetica;
+ 
