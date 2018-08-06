@@ -5277,8 +5277,7 @@ $(document).ready(function () {
     }
   })
 
-  // TO ENABLE
-  // sound.play();
+  sound.play()
 
   // Fade out the music during video slide (on slide 9)
   Reveal.addEventListener('slidechanged', function (event) {
