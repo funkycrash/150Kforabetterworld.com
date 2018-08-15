@@ -91,9 +91,12 @@
 				</section>
 
 				<section data-background-transition="convex" data-autoslide="29000" data-transition-speed="slow">
-					<video>
+					<video id="video" muted autoplay>
 						<source data-src="/assets/video/video.mp4" type="video/mp4" />
 					  </video>
+					  <div style="display:block;">
+					  	<span id="unmuteButton" class="button">unmute video</span>
+					  </div>
 				</section>
 
 				<section data-background-color="#ffffff" style="display:none;" data-transition-speed="slow" data-autoslide="1500">
@@ -197,6 +200,13 @@
 				document.body.className = document.body.className.replace(/\bnoscroll\b/,'');
 			}
 		</script>
+
+		<script>
+		unmuteButton.addEventListener('click', function() {
+			  video.muted = false;
+			  $(this).hide()
+		});
+  		</script>
 
 	</body>
 </html>
