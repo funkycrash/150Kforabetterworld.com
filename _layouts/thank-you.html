@@ -14,7 +14,7 @@
 	<body>
 		{% include inline-css.html %}
 		<div id="overlay"></div>
-		<div id="spinner" class="c-white">Loading...</div>
+		<div id="loader" class="c-white">Loading...</div>
 
 		<div class="foot-logo">
 			<img src="/assets/img/hl-logo-small.png" alt="">
@@ -92,6 +92,10 @@
 
 				<section data-background-video="/assets/video/video.mp4" data-background-transition="convex" data-autoslide="24000" data-transition-speed="slow">
 					
+				</section>
+
+				<section data-background-color="#ffffff" style="display:none;" data-transition-speed="slow" data-autoslide="1500">
+					<img src="/assets/img/hl-logo.png" alt="" style="max-width:650px;">
 				</section>
 
 
@@ -182,10 +186,10 @@
 		<script>
 			document.body.setAttribute("class", "noscroll");
 			document.getElementById("overlay").style.display = "block";
-			document.getElementById("spinner").style.display = "block";
+			document.getElementById("loader").style.display = "block";
 
 			window.onload = function() {
-				document.getElementById("spinner").style.display = "none";
+				document.getElementById("loader").style.display = "none";
 				document.getElementById("overlay").style.display = "none";
 
 				document.body.className = document.body.className.replace(/\bnoscroll\b/,'');
