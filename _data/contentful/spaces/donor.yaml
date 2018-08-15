@@ -3,12 +3,12 @@ websiteContent:
 - sys:
     id: 1vphFw2OzmeU6isqIY6OWa
     created_at: !ruby/object:DateTime 2018-08-02 00:57:29.599000000 Z
-    updated_at: !ruby/object:DateTime 2018-08-02 00:57:29.599000000 Z
+    updated_at: !ruby/object:DateTime 2018-08-15 19:12:03.744000000 Z
     content_type_id: websiteContent
-  gift_enabled1: "$1000 enables 2 Solar Mamas to go through an ENTREPRENEURIAL and
-    LIFE SKILLS training in addition to her solar engineering training"
-  gift_enabled2: "$1000 pays for 16 solar lanterns"
-  gift_enabled3: "$1000 provides a Solar Mama<br/> with 4 solar home light systems"
+  impact_stats_title: 'Our $150,000 will fund:'
+  gift_enabled1: 214 solar lanterns for children to study
+  gift_enabled2: 555 houses solar electrified
+  gift_enabled3: 60 women trained as solar engineers
   help_us: All Hogan Lovells staff can get involved by either offering pro bono advice
     to Barefoot College to help their global expansion, volunteering to educate the
     next generation about the SDGs, or fundraising with your clients to help train

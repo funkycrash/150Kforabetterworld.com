@@ -1,25 +1,14 @@
-.ml12 {
-  font-weight: 200;
-  text-transform: uppercase;
-  letter-spacing: 0.2em;
-} 
-
-p.ml12 {
-    margin-top: 1em; 
-    font-size: 18px !important;
-    text-transform: capitalize;
-}
-
-
-.ml12 .letter {
-  display: inline-block;
-  font-size: 2em;
-  line-height: 2em;
-  font-family: $stack-title;
-} 
-
 .loader {
 	width: 100px;
     margin: 0 auto;
     padding-top: 22vw;
+}
+
+
+.bounce-img {
+  transform: scale(3);
+}
+.bounce-img.animation-target {
+  transform: scale(1);
+  transition: all 1s ease-in .5s;
 }

@@ -35,6 +35,18 @@ $(document).ready(function () {
         autoSlide: 5000,
         autoPlayMedia: true
       })
+
+      // Add bounce effects on some fragments
+	    Reveal.addEventListener('fragmentshown', function (event) {
+        if ($(event.fragment).hasClass('bounce')) {
+          $(event.fragment).find('img').addClass('animation-target')
+        }
+      })
+      Reveal.addEventListener( 'fragmenthidden', function( event ) {
+        if ($(event.fragment).hasClass('bounce')) {
+          $(event.fragment).find('img').removeClass('animation-target')
+        }
+      })
     }
   })
 
