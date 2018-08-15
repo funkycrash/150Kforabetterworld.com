@@ -28,5 +28,4 @@ module.exports = function (grunt) {
 
   // Custom tasks
   grunt.registerTask('default', ['concat', 'uglify', 'shell:jekyllBuildContentful', 'browserSync', 'watch'])
-  grunt.registerTask('imagemin', ['imagemin'])
 }
