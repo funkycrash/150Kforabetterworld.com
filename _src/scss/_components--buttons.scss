@@ -56,8 +56,13 @@
 }
 
 .button {
+	&:hover {
+		background-color: lighten($green, 10%);
+	}
+	transition: all .2s;
 	background-color: $green;
 	border: none;
+	font-family: $stack-content;
 	padding: 15px 32px !important;
 	text-align: center;
 	text-decoration: none;
