@@ -36,8 +36,8 @@
 				<section data-background-color="#ffffff" data-transition-speed="slow" data-autoslide="2500">
 					<img src="/assets/img/logo-flip.png" alt="" style="max-width:650px;">
 					<h3 class="fragment fade-left c-green" data-autoslide="1500">Thank you {{page.title}}</h3>
-					<h3 class="fragment fade-right c-green bg-green" data-autoslide="1500" style="display:inline-block;">Together we've raised</h3>
-					<h3 class="fragment fade-left c-green" data-autoslide="1500">$150,000 for women and girls</h3>
+					<h3 class="fragment fade-right c-green bg-green" data-autoslide="1500" style="display:inline-block;">{{ websiteContent.thank_you_first_text }}</h3>
+					<h3 class="fragment fade-left c-green" data-autoslide="1500">{{ websiteContent.thank_you_second_text }}</h3>
 				</section>
 
 				<section data-background-image="/assets/img/background.jpg"  data-autoslide="4500" data-transition-speed="slow">
@@ -45,8 +45,8 @@
 							<img src="/assets/img/laughing-family.jpg" class="big-image" style="width:80%;"/>
 						</div>
 						<div class="quote fragment fade-left" data-autoslide="3500">
-							<h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">This is the side of history we want to be on</h3><br/>
-							<p>– Steve Immelt, CEO, Hogan Lovells</p>
+							<h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">{{ websiteContent.quote_1 }}</h3><br/>
+							<p>– {{ websiteContent.quote_author_1 }}</p>
 						</div>
 						
 				</section>
@@ -81,15 +81,15 @@
 							<img src="/assets/img/macron.jpg" class="big-image" style="width:70%;"/>
 						</div>
 						<div class="quote bg-darkgreen fragment fade-left" data-autoslide="3500">
-							<h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">"This is how we change the world!"</h3><br/>
-							<p>– French President Emmanuel Macron</p>
+							<h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">{{ websiteContent.quote_2 }}</h3><br/>
+							<p>– {{ websiteContent.quote_2_author }}</p>
 						</div>
 						
 				</section>
 
 				<section data-background-transition="convex" data-background-video="/assets/video/video.mp4" data-autoslide="29000" data-transition-speed="slow" data-background-video-muted="true" id="videoSlide">
 					<div style="display:block;">
-							<span id="unmuteButton" class="button" style="margin-top:35%;">unmute video</span>
+							<span id="unmuteButton" class="button" style="margin-top:35%;">{{ websiteContent.unmute_button_text }}</span>
 						</div>
 				</section>
 
@@ -101,20 +101,18 @@
 							<h2>Thank you</h2>
 							<img src="/assets/img/barefoot-logo.png" width="200"/><br/>
 							<img src="/assets/img/hl-medium.png" width="75"/>
-							<p>On the 5th of October you contributed to shifting inequalities across the world. We invite you now to help us elevate this power of partnerships. Host a film screening of Flip the Switch for clients and future clients. 
-									<br/><a href="mailto:citizenship.london@hoganlovels.com" style="color:#fff;">Contact us</a> to get involved.</p>
+							{{ websiteContent.carousel_1_text | markdownify }}
 
 						</div>
 							
 						  <div class="carousel__cell">
 							  <h2>Go Behind the scene</h2>
 							  <p><a href="https://www.youtube.com/watch?v=b9OQ85shbng&list=PLgL2AgEKYdKZar4Tu2Rf1PAD2YIU8K8kL&ab_channel=OffRoad" target="_blank">Watch #FliptheSwitch YouTube series</a> from filming on location<br/><br/>
-							  Tell others about Flip The Switch<br/>
-							  <h2>Share</h2>
+								{{ websiteContent.carousel_2_text | markdownify }}
 							  <div class="share-icons">
-									<a href="https://www.facebook.com/sharer.php?u=https://www.facebook.com/fliptheswitchfilm/" target="_blank"><img src="/assets/img/share-facebook.png" alt=""></a>
-									<a href="https://www.instagram.com/fliptheswitch_movie/" target="_blank"><img src="/assets/img/share-instagram.png" alt=""></a>
-									<a href="https://fliptheswitch.film" target="_blank"><img src="/assets/img/share-website.png" alt=""></a>
+									<a href="{{ websiteContent.link_facebook}}" target="_blank"><img src="/assets/img/share-facebook.png" alt=""></a>
+									<a href="{{ websiteContent.link_instagram}}" target="_blank"><img src="/assets/img/share-instagram.png" alt=""></a>
+									<a href="{{ websiteContent.link_website}}" target="_blank"><img src="/assets/img/share-website.png" alt=""></a>
 								</div>
 							</p>
 						  </div>
@@ -128,8 +126,7 @@
 										<img src="/assets/img/bunker.jpg" width="150"/>
 									</div>
 									<div class="col-1-2 quote" style="margin-top: -130px !important; margin-right: 10px;">
-										<p>It really shook me to the extent when I came back home I told mother that I’d like to live and work in a village. And she went into a coma. 
-										<br/><br/><a href="https://www.npr.org/2016/06/15/482154985/bunker-roy-founder-of-barefoot-college" target="_blank">Click to hear Bunker’s NPR interview</a></p>
+										{{ websiteContent.carousel_3_text | markdownify }}
 									</div>
 								</div>
 						  </div>
@@ -165,85 +162,7 @@
 					</div>
 
 					<img id="btnStartAgain" src="/assets/img/startagain.png"/>
-
-
 				</section>
-
-
-<!--
-
-				<section data-background="linear-gradient(#fee036, #ffffff)" data-autoslide="3500" data-transition-speed="slow" class="slideshow">
-					<div class="grid">
-						<div class="col-1-2 raised-box">
-							<div class="image-slideshow" style="background-image:url(/assets/img/slideshow-06.jpg)">
-							</div>
-						</div>
-
-						<div class="col-1-2 flex-center">
-							<h3 class="c-black">Your support means more women will be trained to solar electrify their villages around the world.
-							</h3>
-						</div>
-					</div>
-				</section>
-
-
-				<section data-background="linear-gradient(#fee036, #ffffff)" data-autoslide="4500" data-transition-speed="slow" class="slideshow">
-					<div class="grid">
-						<div class="col-1-2 raised-box">
-							<div class="image-slideshow" style="background-image:url(/assets/img/slideshow-05.jpg)">
-							</div>
-						</div>
- 
-						<div class="col-1-2 flex-center">
-							<h4 class="c-black" style="margin-left: 50px;">"Never did I think that I would be a solar engineer. It was my two sons who encouraged me. They saw this project as my opportunity to do something for the community of Santa Teresa, and help change all our lives."<br/>
-							 -- Florentina Cloc, Solar Mama</h4>
-						</div>
-					</div>
-				</section>
-
-
-
-				<section data-background-video="/assets/video/video.mp4" data-background-transition="convex" data-autoslide="24000" data-transition-speed="slow">
-					
-				</section>
- 
-
-				<section data-background="linear-gradient(#e68526, #ffffff)" data-background-transition="zoom" data-autoslide="2000" data-transition-speed="slow">
-					<h3 class="text-shadow c-white max-width">Thank you from</h3><br/>
-					<img src="/assets/img/barefoot-colors.png" width="300px" alt="barefoot college logo"/>
-					<br/>
-					
-				</section> 
-
-				<section data-background="linear-gradient(#badb1c, #ffffff)" data-background-transition="zoom" data-autoslide="9000" data-transition-speed="slow">
-					<h4 style="max-width: 80%;">Through our global Citizenship partnership with Barefoot College, Hogan Lovells empowers women and girls by:</h4><br/>
-					<p style="max-width: 50%; display:block; margin:0 auto;text-align: left;">
-						<span class="fragment" data-autoslide="2000">Training 400 women</span><br/> 
-						<span class="fragment" data-autoslide="3000">Solar electrifying 20,000 households</span> <br/>
-						<span class="fragment" data-autoslide="3000">Bringing light to 200,000 people</span> <br/>
-						<span class="fragment" data-autoslide="3000">And helping Barefoot achieve 7 of the 17 Sustainable Development Goals (SDGs).</span><br/>
-						<div id="final-screen-logo">
-							<img src="/assets/img/hl-logo.png" alt="HL logo"/>
-						</div>
-					</p>
-					
-
-				</section> 
-
-				<section data-background="linear-gradient(#badb1c, #ffffff)" data-background-transition="zoom" data-autoslide="2000" data-transition-speed="slow">
-					<h3 class="max-width">Help us #FlipTheSwitch</h3><br/>
-					<p class="max-width"  style="text-align: left;">{{ websiteContent.help_us }}</p><br/>
-					<p class="max-width" style="text-align: left;">Women are the changemakers. They are prepared for this moment in history to lead the way to a better life, economic growth, stronger communities and a better world. Walk Barefoot with us and leave your footprints for a better world.</p><br/>
-					<p class="max-width" style="text-align: left;">{{ websiteContent.help_us_email | markdownify }}</p>
-					<br/>
-
-					{% include share-icons.html %}
-					<br/>
-					<a href="javascript:window.location.reload(true);" class="c-white text-shadow">	
-						<img src="/assets/img/icons/replay.svg"/>
-					</a>
-				</section> 
-  -->
 
 			</div>
 

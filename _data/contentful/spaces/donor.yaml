@@ -3,20 +3,40 @@ websiteContent:
 - sys:
     id: 1vphFw2OzmeU6isqIY6OWa
     created_at: !ruby/object:DateTime 2018-08-02 00:57:29.599000000 Z
-    updated_at: !ruby/object:DateTime 2018-08-28 00:42:47.374000000 Z
+    updated_at: !ruby/object:DateTime 2018-08-28 01:48:10.834000000 Z
     content_type_id: websiteContent
+  thank_you_first_text: Together we've raised
+  thank_you_second_text: "$150,000 for women and girls"
   impact_stats_title: 'Our $150,000 will fund:'
+  quote1: This is the side of history we want to be on
+  quote_author: Steve Immelt, CEO, Hogan Lovells
   gift_enabled1: "214<br/>\n<span class=\"bg-green\">solar lanterns</span><br/> \nfor
     children to study"
   gift_enabled2: 555<br/><br/> <span class="bg-green">houses solar electrified</span>
   gift_enabled3: "60<br/> \n<span class=\"bg-green\">women trained</span>\n<br/> as
     solar engineers"
+  quote2: This is how we change the world!
+  quote2_author: French President Emmanuel Macron
+  unmute_button_text: unmute video
   help_us: All Hogan Lovells staff can get involved by either offering pro bono advice
     to Barefoot College to help their global expansion, volunteering to educate the
     next generation about the SDGs, or fundraising with your clients to help train
     more solar mamas.
   help_us_email: Contact us at [citizenship.london@hoganlovells.com](mailto:citizenship.london@hoganlovells.com)
     to get involved.
+  carousel1_text: "<p>On the 5th of October you contributed to shifting inequalities
+    across the world. We invite you now to help us elevate this power of partnerships.
+    Host a film screening of Flip the Switch for clients and future clients. \n\t\t\t\t\t\t\t\t\t<br/><a
+    href=\"mailto:citizenship.london@hoganlovels.com\" style=\"color:#fff;\">Contact
+    us</a> to get involved.</p>"
+  carousel2_text: "Tell others about Flip The Switch<br/>\n\t\t\t\t\t\t\t  <h2>Share</h2>"
+  carousel3_text: "It really shook me to the extent when I came back home I told mother
+    that I’d like to live and work in a village. And she went into a coma. \n<br/><br/><a
+    href=\"https://www.npr.org/2016/06/15/482154985/bunker-roy-founder-of-barefoot-college\"
+    target=\"_blank\">Click to hear Bunker’s NPR interview</a>"
+  link_facebook: https://www.facebook.com/sharer.php?u=https://www.facebook.com/fliptheswitchfilm/
+  link_instagram: https://www.instagram.com/fliptheswitch_movie/
+  link_website: https://fliptheswitch.film
 thankYou:
 - sys:
     id: 2Qj6wOxdX2ESyaGMI0qWWE
