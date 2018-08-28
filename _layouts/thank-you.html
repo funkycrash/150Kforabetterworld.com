@@ -35,14 +35,14 @@
 
 				<section data-background-color="#ffffff" data-transition-speed="slow" data-autoslide="2500">
 					<img src="/assets/img/logo-flip.png" alt="" style="max-width:650px;">
-					<h3 class="fragment fade-in c-green" data-autoslide="1500">Thank you {{page.title}}</h3>
-					<h3 class="fragment fade-in c-green bg-green" data-autoslide="1500" style="display:inline-block;">Together we've raised</h3>
-					<h3 class="fragment fade-in c-green" data-autoslide="1500">$150,000 for women and girls</h3>
+					<h3 class="fragment fade-left c-green" data-autoslide="1500">Thank you {{page.title}}</h3>
+					<h3 class="fragment fade-right c-green bg-green" data-autoslide="1500" style="display:inline-block;">Together we've raised</h3>
+					<h3 class="fragment fade-left c-green" data-autoslide="1500">$150,000 for women and girls</h3>
 				</section>
 
 				<section data-background-image="/assets/img/background.jpg"  data-autoslide="4500" data-transition-speed="slow">
 						<div class="fragment fade-right" data-autoslide="1500">
-							<img src="/assets/img/laughing-family.jpg" style="width:80%;"/>
+							<img src="/assets/img/laughing-family.jpg" class="big-image" style="width:80%;"/>
 						</div>
 						<div class="quote fragment fade-left" data-autoslide="3500">
 							<h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">This is the side of history we want to be on</h3><br/>
@@ -78,7 +78,7 @@
 
 				<section data-background-image="/assets/img/background.jpg" data-background-transition="zoom"  data-autoslide="4000" data-transition-speed="slow">
 						<div class="fragment fade-right" data-autoslide="1500">
-							<img src="/assets/img/macron.jpg" style="width:70%;"/>
+							<img src="/assets/img/macron.jpg" class="big-image" style="width:70%;"/>
 						</div>
 						<div class="quote bg-darkgreen fragment fade-left" data-autoslide="3500">
 							<h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">"This is how we change the world!"</h3><br/>
@@ -96,10 +96,11 @@
 						<div class="carousel">
 
 						<div class="carousel__cell">
-							<h2>Client Connections</h2>
-							<img src="/assets/img/barefootxhl.png" width="300"/>
+							<h2>Thank you</h2>
+							<img src="/assets/img/barefoot-logo.png" width="200"/><br/>
+							<img src="/assets/img/hl-medium.png" width="75"/>
 							<p>On the 5th of October you contributed to shifting inequalities across the world. We invite you now to help us elevate this power of partnerships. Host a film screening of Flip the Switch for clients and future clients. 
-									<br/><a href="mailto:citizenship.london@hoganlovels.com">Contact us</a> to get involved.</p>
+									<br/><a href="mailto:citizenship.london@hoganlovels.com" style="color:#fff;">Contact us</a> to get involved.</p>
 
 						</div>
 							
@@ -124,7 +125,7 @@
 									<div class="col-1-2" style="width:45%;">
 										<img src="/assets/img/bunker.jpg" width="150"/>
 									</div>
-									<div class="col-1-2 quote" style="margin-top: -120px !important; margin-right: 10px;">
+									<div class="col-1-2 quote" style="margin-top: -130px !important; margin-right: 10px;">
 										<p>It really shook me to the extent when I came back home I told mother that I’d like to live and work in a village. And she went into a coma. 
 										<br/><br/><a href="https://www.npr.org/2016/06/15/482154985/bunker-roy-founder-of-barefoot-college" target="_blank">Click to hear Bunker’s NPR interview</a></p>
 									</div>
@@ -160,6 +161,8 @@
 							</p>
 						  </div>
 					</div>
+
+					<img id="btnStartAgain" src="/assets/img/startagain.png"/>
 
 
 				</section>
@@ -260,6 +263,12 @@
 
 				document.body.className = document.body.className.replace(/\bnoscroll\b/,'');
 			}
+		</script>
+
+		<script>
+			$('#btnStartAgain').on('click', function () {
+				window.location.reload(true)
+			})
 		</script>
 
 	</body>
