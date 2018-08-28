@@ -87,8 +87,10 @@
 						
 				</section>
 
-				<section data-background-transition="convex" data-background-video="/assets/video/video.mp4" data-autoslide="29000" data-transition-speed="slow" data-background-video-muted="true">
-
+				<section data-background-transition="convex" data-background-video="/assets/video/video.mp4" data-autoslide="29000" data-transition-speed="slow" data-background-video-muted="true" id="videoSlide">
+					<div style="display:block;">
+							<span id="unmuteButton" class="button" style="margin-top:35%;">unmute video</span>
+						</div>
 				</section>
 
 				<section data-background-image="/assets/img/background.jpg" data-transition-speed="slow" data-autoslide="1500">
@@ -270,6 +272,13 @@
 				window.location.reload(true)
 			})
 		</script>
+
+		<script>
+		unmuteButton.addEventListener('click', function() {
+			$("video").prop('muted', false)
+			  $(this).hide()
+		});
+  		</script>
 
 	</body>
 </html>
