@@ -1,2 +1,35 @@
 .c-black { color: #000; }
 .c-white { color: #FFF; }
+.c-green { color: #557635 }
+.bg-green { background-color: #b1cf35 }
+.bg-darkgreen {  background-color:#557635 !important; }
+
+.quote {
+    background: #b1cf35;
+    margin-top: -40px !important;
+    display: inline-block;
+    float: right;
+    padding:20px !important;
+    box-shadow: 1px 1px 5px #666;
+    width: 70%;
+    &:before, &:after {
+        content: '"';
+        left: 10px;
+        position: absolute;
+        color: #fff;
+        font-size: 75px;
+    }
+    &:after {
+        right: 10px;
+        left: initial;
+    }
+    h3 {
+        color: #fff;
+        margin-top:20px !important;
+        font-size: 32px;
+        font-weight: 400;
+    }
+    p {
+        color: #fff;
+    }
+}

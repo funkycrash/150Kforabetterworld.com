@@ -29,84 +29,85 @@
 			<div class="slides">
 
 				<section data-background-color="#ffffff" id="first" style="display:none;" data-transition-speed="slow" data-autoslide="1500">
-					<img src="/assets/img/hl-logo.png" alt="" style="max-width:650px;">
+					<img src="/assets/img/logo-flip.png" alt="" style="max-width:650px;">
 				</section>
 
 
 				<section data-background-color="#ffffff" data-transition-speed="slow" data-autoslide="2500">
-					<h3 class="fragment fade-in" data-autoslide="1500">Thank you {{page.title}}</h3>
-					<h3 class="fragment fade-in" data-autoslide="1500">Together we've raised</h3>
-					<h3 class="fragment fade-in" data-autoslide="1500">$150,000 for women and girls</h3>
+					<img src="/assets/img/logo-flip.png" alt="" style="max-width:650px;">
+					<h3 class="fragment fade-in c-green" data-autoslide="1500">Thank you {{page.title}}</h3>
+					<h3 class="fragment fade-in c-green bg-green" data-autoslide="1500" style="display:inline-block;">Together we've raised</h3>
+					<h3 class="fragment fade-in c-green" data-autoslide="1500">$150,000 for women and girls</h3>
 				</section>
 
-				<section data-background-image="/assets/img/background.jpg" data-background-transition="zoom"  data-autoslide="4500" data-transition-speed="slow">
-					<div class="grid">
-						<div class="col-1-2 fragment fade-right" data-autoslide="1500">
-							<img src="/assets/img/laughing-family.jpg" style="width:100%;"/>
+				<section data-background-image="/assets/img/background.jpg"  data-autoslide="4500" data-transition-speed="slow">
+						<div class="fragment fade-right" data-autoslide="1500">
+							<img src="/assets/img/laughing-family.jpg" style="width:80%;"/>
 						</div>
-						<div class="col-1-2 fragment fade-left" data-autoslide="3500">
-							<h3 class="c-black" style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">"This is the side of history we want to be on"</h3><br/>
+						<div class="quote fragment fade-left" data-autoslide="3500">
+							<h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">This is the side of history we want to be on</h3><br/>
 							<p>– Steve Immelt, CEO, Hogan Lovells</p>
 						</div>
 						
-					</div>
 				</section>
 
 				 <section data-background-image="/assets/img/background.jpg" data-transition-speed="slow" data-autoslide="1500">
-					<h3 class="c-black">{{ websiteContent.impact_stats_title }}</h3>
+					<h3 class="c-green">{{ websiteContent.impact_stats_title }}</h3>
  
 					<div class="grid" style="padding:50px;">
 						<div class="col-1-3 fact">
 							<span class="fragment bounce" data-autoslide="2500">
 									<img src="/assets/img/icons/lightbulb.png" class="bounce-img"/>
-									<p>{{ websiteContent.gift_enabled1 }}</p> 
-							</span>
-							
+									<p class="c-green">{{ websiteContent.gift_enabled1 | markdownify }}</p> 
+								</span>
 						</div> 
 						<div class="col-1-3 fact">
 							<span class="fragment bounce" data-autoslide="2500">
 								<img src="/assets/img/icons/house.png" class="bounce-img"/>
-								<p>{{ websiteContent.gift_enabled2 }}</p>
+								<p class="c-green">{{ websiteContent.gift_enabled2 | markdownify  }}</p>
 							</span>
 						</div>
 						<div class="col-1-3 fact">
 							<span class="fragment bounce"  data-autoslide="4000">
 								<img src="/assets/img/icons/women.png" class="bounce-img"/>
-								<p>{{ websiteContent.gift_enabled3 }}</p>
+								<p class="c-green">{{ websiteContent.gift_enabled3 | markdownify  }}</p>
 							</span>
 						</div>
 					</div> 
 				</section>
 
 				<section data-background-image="/assets/img/background.jpg" data-background-transition="zoom"  data-autoslide="4000" data-transition-speed="slow">
-					<div class="grid">
-						<div class="col-1-2 fragment fade-right" data-autoslide="1500">
-							<img src="/assets/img/beekeeping.jpg" style="width:100%;"/>
+						<div class="fragment fade-right" data-autoslide="1500">
+							<img src="/assets/img/macron.jpg" style="width:70%;"/>
 						</div>
-						<div class="col-1-2 fragment fade-left" data-autoslide="3500">
-							<h3 class="c-black" style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">"This is how we change the world!"</h3><br/>
+						<div class="quote bg-darkgreen fragment fade-left" data-autoslide="3500">
+							<h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">"This is how we change the world!"</h3><br/>
 							<p>– French President Emmanuel Macron</p>
 						</div>
 						
-					</div>
 				</section>
 
-				<section data-background-transition="convex" data-autoslide="29000" data-transition-speed="slow">
-					<video id="video" muted autoplay>
-						<source data-src="/assets/video/video.mp4" type="video/mp4" />
-					  </video>
-					  <div style="display:block;">
-					  	<span id="unmuteButton" class="button">unmute video</span>
-					  </div>
+				<section data-background-transition="convex" data-background-video="/assets/video/video.mp4" data-autoslide="29000" data-transition-speed="slow">
+
 				</section>
 
 				<section data-background-image="/assets/img/background.jpg" data-transition-speed="slow" data-autoslide="1500">
 					<div class="scene"> 
 						<div class="carousel">
+
+						<div class="carousel__cell">
+							<h2>Client Connections</h2>
+							<img src="/assets/img/barefootxhl.png" width="300"/>
+							<p>On the 5th of October you contributed to shifting inequalities across the world. We invite you now to help us elevate this power of partnerships. Host a film screening of Flip the Switch for clients and future clients. 
+									<br/><a href="mailto:citizenship.london@hoganlovels.com">Contact us</a> to get involved.</p>
+
+						</div>
+							
 						  <div class="carousel__cell">
-							  <h2>Go Behind the Scenes</h2>
+							  <h2>Go Behind the scene</h2>
 							  <p><a href="https://www.youtube.com/watch?v=b9OQ85shbng&list=PLgL2AgEKYdKZar4Tu2Rf1PAD2YIU8K8kL&ab_channel=OffRoad" target="_blank">Watch #FliptheSwitch YouTube series</a> from filming on location<br/><br/>
 							  Tell others about Flip The Switch<br/>
+							  <h2>Share</h2>
 							  <div class="share-icons">
 									<a href="https://www.facebook.com/sharer.php?u=https://www.facebook.com/fliptheswitchfilm/" target="_blank"><img src="/assets/img/share-facebook.png" alt=""></a>
 									<a href="https://www.instagram.com/fliptheswitch_movie/" target="_blank"><img src="/assets/img/share-instagram.png" alt=""></a>
@@ -115,13 +116,7 @@
 							</p>
 						  </div>
 
-						  <div class="carousel__cell">
-							  <h2>Client Connections</h2>
-							  <img src="/assets/img/barefootxhl.png" width="300"/>
-							  <p>On the 5th of October you contributed to shifting inequalities across the world. We invite you now to help us elevate this power of partnerships. Host a film screening of Flip the Switch for clients and future clients. 
-									<br/><a href="mailto:citizenship.london@hoganlovels.com">Contact us</a> to get involved.</p>
 
-						  </div>
 
 						  <div class="carousel__cell">
 										<h2>Be inspired</h2>
@@ -129,41 +124,44 @@
 									<div class="col-1-2" style="width:45%;">
 										<img src="/assets/img/bunker.jpg" width="150"/>
 									</div>
-									<div class="col-1-2">
+									<div class="col-1-2 quote" style="margin-top: -120px !important; margin-right: 10px;">
 										<p>It really shook me to the extent when I came back home I told mother that I’d like to live and work in a village. And she went into a coma. 
 										<br/><br/><a href="https://www.npr.org/2016/06/15/482154985/bunker-roy-founder-of-barefoot-college" target="_blank">Click to hear Bunker’s NPR interview</a></p>
 									</div>
 								</div>
 						  </div>
+
 						</div>
-					</div>
 
 
 					<div class="carousel-options">
-						<p style="display:none;">
-						  <label>
-							Cells
-							<input class="cells-range" type="range" min="3" max="15" value="3" />
-						  </label>
-						</p>
-						<p>
-							<div style="display:block;">
-								<span class="previous-button button">Previous</span>
-								<span class="next-button button">Next</span>
-							</div>
-						</p>
-						<p style="display:none;">
-						  Orientation:
-						  <label>
-							<input type="radio" name="orientation" value="horizontal" checked />
-							horizontal
-						  </label>
-						  <label>
-							<input type="radio" name="orientation" value="vertical" />
-							vertical
-						  </label>
-						</p>
-					  </div>
+							<p style="display:none;">
+							  <label>
+								Cells
+								<input class="cells-range" type="range" min="3" max="15" value="3" />
+							  </label>
+							</p>
+							<p>
+								<div style="display:block;">
+									<span class="previous-button button"><<</span>
+									<span class="next-button button">>></span>
+								</div>
+							</p>
+							<p style="display:none;">
+							  Orientation:
+							  <label>
+								<input type="radio" name="orientation" value="horizontal" checked />
+								horizontal
+							  </label>
+							  <label>
+								<input type="radio" name="orientation" value="vertical" />
+								vertical
+							  </label>
+							</p>
+						  </div>
+					</div>
+
+
 				</section>
 
 
@@ -263,13 +261,6 @@
 				document.body.className = document.body.className.replace(/\bnoscroll\b/,'');
 			}
 		</script>
-
-		<script>
-		unmuteButton.addEventListener('click', function() {
-			  video.muted = false;
-			  $(this).hide()
-		});
-  		</script>
 
 	</body>
 </html>

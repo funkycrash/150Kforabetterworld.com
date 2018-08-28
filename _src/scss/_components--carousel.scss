@@ -31,13 +31,27 @@
     h2, img, p {
         margin:0;
         padding:10px;
+        font-size:24px;
         a, a:visited {
-            color: #000;
+            color: #557635;
         }
     }
+    p {
+      font-size: 18px;
+    }
+  }
+  .carousel-options .next-button, .carousel-options .previous-button {
+    position: absolute;
+    top: 45%;
+  }
+  .carousel-options .next-button {
+    right: -140px;
+  }
+  .carousel-options .previous-button {
+    left: -140px;
   }
 
-.carousel__cell:nth-child(9n+1) { background: hsla(  0, 100%, 50%, 0.9); }
+.carousel__cell:nth-child(9n+1) { background: rgba(  85, 118, 53, 0.9); }
 .carousel__cell:nth-child(9n+2) { background: hsla( 40, 100%, 50%, 0.9); }
 .carousel__cell:nth-child(9n+3) { background: rgba( 186, 219, 28, 0.9); }
 
