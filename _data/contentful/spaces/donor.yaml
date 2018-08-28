@@ -3,11 +3,19 @@ websiteContent:
 - sys:
     id: 1vphFw2OzmeU6isqIY6OWa
     created_at: !ruby/object:DateTime 2018-08-02 00:57:29.599000000 Z
-    updated_at: !ruby/object:DateTime 2018-08-28 01:48:10.834000000 Z
+    updated_at: !ruby/object:DateTime 2018-08-28 18:32:49.964000000 Z
     content_type_id: websiteContent
   thank_you_first_text: Together we've raised
   thank_you_second_text: "$150,000 for women and girls"
   impact_stats_title: 'Our $150,000 will fund:'
+  image_quote1:
+    sys:
+      id: 64LcLMcyFqIiWM4WuMi2Qi
+      created_at: !ruby/object:DateTime 2018-08-28 18:32:23.712000000 Z
+      updated_at: !ruby/object:DateTime 2018-08-28 18:32:23.712000000 Z
+    title: laughing-family
+    description: 
+    url: "//images.ctfassets.net/h4gckunk8e0b/64LcLMcyFqIiWM4WuMi2Qi/54aebf29d5458828264d233a98b86e99/laughing-family.jpg"
   quote1: This is the side of history we want to be on
   quote_author: Steve Immelt, CEO, Hogan Lovells
   gift_enabled1: "214<br/>\n<span class=\"bg-green\">solar lanterns</span><br/> \nfor
@@ -15,6 +23,14 @@ websiteContent:
   gift_enabled2: 555<br/><br/> <span class="bg-green">houses solar electrified</span>
   gift_enabled3: "60<br/> \n<span class=\"bg-green\">women trained</span>\n<br/> as
     solar engineers"
+  image_quote2:
+    sys:
+      id: 3QrJWx2DOE6aeAacygOQ0A
+      created_at: !ruby/object:DateTime 2018-08-28 18:32:46.131000000 Z
+      updated_at: !ruby/object:DateTime 2018-08-28 18:32:46.131000000 Z
+    title: macron
+    description: 
+    url: "//images.ctfassets.net/h4gckunk8e0b/3QrJWx2DOE6aeAacygOQ0A/882d618ec10e4799a6f6ea06d9ae03df/macron.jpg"
   quote2: This is how we change the world!
   quote2_author: French President Emmanuel Macron
   unmute_button_text: unmute video
@@ -29,7 +45,7 @@ websiteContent:
     Host a film screening of Flip the Switch for clients and future clients. \n\t\t\t\t\t\t\t\t\t<br/><a
     href=\"mailto:citizenship.london@hoganlovels.com\" style=\"color:#fff;\">Contact
     us</a> to get involved.</p>"
-  carousel2_text: "Tell others about Flip The Switch<br/>\n\t\t\t\t\t\t\t  <h2>Share</h2>"
+  carousel2_text: "Tell others about Flip The Switch\n\t\t\t\t\t\t\t  "
   carousel3_text: "It really shook me to the extent when I came back home I told mother
     that I’d like to live and work in a village. And she went into a coma. \n<br/><br/><a
     href=\"https://www.npr.org/2016/06/15/482154985/bunker-roy-founder-of-barefoot-college\"
