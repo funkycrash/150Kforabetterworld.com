@@ -46,7 +46,7 @@
 						</div>
 						<div class="quote fragment fade-left" data-autoslide="3500">
 							<h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">{{ websiteContent.quote1 }}</h3><br/>
-							<p>– {{ websiteContent.quote_author }}</p>
+							<p class="text-right">– {{ websiteContent.quote_author }}</p>
 						</div>
 						
 				</section>
@@ -76,13 +76,13 @@
 					</div> 
 				</section>
 
-				<section data-background-image="/assets/img/background.jpg" data-background-transition="zoom"  data-autoslide="4000" data-transition-speed="slow">
+				<section data-background-image="/assets/img/background.jpg" data-autoslide="4000" data-transition-speed="slow">
 						<div class="fragment fade-right" data-autoslide="1500">
 							<img src="{{websiteContent.image_quote2.url}}" class="big-image" style="width:70%;"/>
 						</div>
 						<div class="quote bg-darkgreen fragment fade-left" data-autoslide="3500">
 							<h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">{{ websiteContent.quote2 }}</h3><br/>
-							<p>– {{ websiteContent.quote2_author }}</p>
+							<p class="text-right">– {{ websiteContent.quote2_author }}</p>
 						</div>
 						
 				</section>
@@ -94,19 +94,81 @@
 				</section>
 
 				<section data-background-image="/assets/img/background.jpg" data-transition-speed="slow" data-autoslide="1500">
+
+				<div class="carousel-container">
+					<div class="container">
+						<div class="carousel">
+						<div class="item a">
+							<h2>{{ websiteContent.carousel1_title }}</h2>
+							<img src="/assets/img/barefoot-logo.png" width="200"/> 
+							<img src="/assets/img/hl-medium.png" width="75"/>
+							{{ websiteContent.carousel1_text | markdownify }}
+						</div>
+						<div class="item b">
+							<h2>{{ websiteContent.carousel2_title }}</h2>
+							<p><a href="https://www.youtube.com/watch?v=b9OQ85shbng&list=PLgL2AgEKYdKZar4Tu2Rf1PAD2YIU8K8kL&ab_channel=OffRoad" target="_blank">Watch #FliptheSwitch YouTube series</a> from filming on location<br/><br/>
+							  {{ websiteContent.carousel2_text | markdownify }}
+							  <h2>Share</h2>
+							<div class="share-icons">
+								  <a href="{{ websiteContent.link_facebook}}" target="_blank"><img src="/assets/img/share-facebook.png" alt=""></a>
+								  <a href="{{ websiteContent.link_instagram}}" target="_blank"><img src="/assets/img/share-instagram.png" alt=""></a>
+								  <a href="{{ websiteContent.link_website}}" target="_blank"><img src="/assets/img/share-website.png" alt=""></a>
+							  </div>
+						</div>
+						<div class="item c">
+							<h2>{{ websiteContent.carousel3_title }}</h2>
+							<div class="grid">
+								<div class="col-1-2" style="width:45%;">
+									<img src="/assets/img/bunker.jpg" width="150"/>
+								</div>
+								<div class="col-1-2 quote" style="margin-top: -180px !important; margin-right: 10px;">
+									{{ websiteContent.carousel3_text | markdownify }}
+								</div>
+							</div>
+						</div>
+						<div class="item d">
+							<h2>{{ websiteContent.carousel4_title }}</h2>
+							<div class="grid">
+								<div class="col-1-2" style="width:45%;">
+									<img src="{{ websiteContent.carousel4_image.url }}" width="150"/>
+								</div>
+								<div class="col-1-2 quote no-marks" style="margin-right: 10px;">
+									{{ websiteContent.carousel4_text | markdownify }}
+								</div>
+							</div>
+						</div>
+						<div class="item e">
+							<h2>{{ websiteContent.carousel5_title }}</h2>
+							<div class="grid">
+								<div class="col-1-2" style="width:45%;">
+									<img src="{{ websiteContent.carousel5_image.url }}" width="150"/>
+								</div>
+								<div class="col-1-2 quote no-marks" style="margin-right: 10px;">
+									{{ websiteContent.carousel5_text | markdownify }}
+								</div>
+							</div>
+						</div>
+						</div>
+					</div>
+					<div class="next">Next</div>
+					<div class="prev">Prev</div>
+				</div>
+				</section>
+
+				<!-- <section data-background-image="/assets/img/background.jpg" data-transition-speed="slow" data-autoslide="1500">
 					<div class="scene"> 
 						<div class="carousel">
 
 						<div class="carousel__cell">
 							<h2>Thank you</h2>
-							<img src="/assets/img/barefoot-logo.png" width="200"/><br/>
+							<img src="/assets/img/barefoot-logo.png" width="200"/> 
 							<img src="/assets/img/hl-medium.png" width="75"/>
 							{{ websiteContent.carousel1_text | markdownify }}
 
 						</div>
 							
 						  <div class="carousel__cell">
-							  <h2>Go Behind the scene</h2>
+							  <h2>Go behind the scene</h2>
 							  <p><a href="https://www.youtube.com/watch?v=b9OQ85shbng&list=PLgL2AgEKYdKZar4Tu2Rf1PAD2YIU8K8kL&ab_channel=OffRoad" target="_blank">Watch #FliptheSwitch YouTube series</a> from filming on location<br/><br/>
 								{{ websiteContent.carousel2_text | markdownify }}
 								<h2>Share</h2>
@@ -132,6 +194,31 @@
 								</div>
 						  </div>
 
+						  <div class="carousel__cell">
+							<h2>Be inspired</h2>
+								<div class="grid">
+									<div class="col-1-2" style="width:45%;">
+										<img src="/assets/img/bunker.jpg" width="150"/>
+									</div>
+									<div class="col-1-2 quote" style="margin-top: -130px !important; margin-right: 10px;">
+										{{ websiteContent.carousel3_text | markdownify }}
+									</div>
+								</div>
+						</div>
+
+
+						<div class="carousel__cell">
+							<h2>Be inspired</h2>
+								<div class="grid">
+									<div class="col-1-2" style="width:45%;">
+										<img src="/assets/img/bunker.jpg" width="150"/>
+									</div>
+									<div class="col-1-2 quote" style="margin-top: -130px !important; margin-right: 10px;">
+										{{ websiteContent.carousel3_text | markdownify }}
+									</div>
+								</div>
+						</div>
+
 						</div>
 
 
@@ -139,7 +226,7 @@
 							<p style="display:none;">
 							  <label>
 								Cells
-								<input class="cells-range" type="range" min="3" max="15" value="3" />
+								<input class="cells-range" type="range" min="5" max="15" value="5" />
 							  </label>
 							</p>
 							<p>
@@ -163,7 +250,7 @@
 					</div>
 
 					<img id="btnStartAgain" src="/assets/img/startagain.png"/>
-				</section>
+				</section> -->
 
 			</div>
 

@@ -3,7 +3,7 @@ websiteContent:
 - sys:
     id: 1vphFw2OzmeU6isqIY6OWa
     created_at: !ruby/object:DateTime 2018-08-02 00:57:29.599000000 Z
-    updated_at: !ruby/object:DateTime 2018-08-28 18:32:49.964000000 Z
+    updated_at: !ruby/object:DateTime 2018-09-07 01:29:24.136000000 Z
     content_type_id: websiteContent
   thank_you_first_text: Together we've raised
   thank_you_second_text: "$150,000 for women and girls"
@@ -20,7 +20,7 @@ websiteContent:
   quote_author: Steve Immelt, CEO, Hogan Lovells
   gift_enabled1: "214<br/>\n<span class=\"bg-green\">solar lanterns</span><br/> \nfor
     children to study"
-  gift_enabled2: 555<br/><br/> <span class="bg-green">houses solar electrified</span>
+  gift_enabled2: 555<br/><span class="bg-green">houses solar electrified</span>
   gift_enabled3: "60<br/> \n<span class=\"bg-green\">women trained</span>\n<br/> as
     solar engineers"
   image_quote2:
@@ -40,16 +40,44 @@ websiteContent:
     more solar mamas.
   help_us_email: Contact us at [citizenship.london@hoganlovells.com](mailto:citizenship.london@hoganlovells.com)
     to get involved.
-  carousel1_text: "<p>On the 5th of October you contributed to shifting inequalities
-    across the world. We invite you now to help us elevate this power of partnerships.
-    Host a film screening of Flip the Switch for clients and future clients. \n\t\t\t\t\t\t\t\t\t<br/><a
-    href=\"mailto:citizenship.london@hoganlovels.com\" style=\"color:#fff;\">Contact
-    us</a> to get involved.</p>"
+  carousel1_title: Thank you
+  carousel1_text: "<p>At the Global Partners' Conference, you contributed to shifting
+    inequalities across the world. We invite you now to help us elevate this power
+    of partnerships. Host a film screening of Flip the Switch for clients and future
+    clients. \n\t\t\t\t\t\t\t\t\t<br/><a href=\"mailto:citizenship.london@hoganlovels.com\"
+    style=\"color:#fff;\">Contact us</a> to get involved.</p>"
+  carousel2_title: Go behind the scene
   carousel2_text: "Tell others about Flip The Switch\n\t\t\t\t\t\t\t  "
+  carousel3_title: Be inspired
   carousel3_text: "It really shook me to the extent when I came back home I told mother
-    that I’d like to live and work in a village. And she went into a coma. \n<br/><br/><a
-    href=\"https://www.npr.org/2016/06/15/482154985/bunker-roy-founder-of-barefoot-college\"
+    that I’d like to live and work in a village. And she went into a coma. \n<br/>
+    – Bunker Roy, Founder Barefoot College<br/>\n<a href=\"https://www.npr.org/2016/06/15/482154985/bunker-roy-founder-of-barefoot-college\"
     target=\"_blank\">Click to hear Bunker’s NPR interview</a>"
+  carousel4_title: Volunteer for Barefoot Futures
+  carousel4_text: |-
+    Volunteer with us on Barefoot Futures, our global Community Investment program, that teaches students how they can be like the solar mamas and create a better world. <br/>
+    [Click to watch](https://youtu.be/K-lRm4c5atM "Click to watch")
+  carousel4_image:
+    sys:
+      id: GvtTePwgkSWSMMUYIKeUS
+      created_at: !ruby/object:DateTime 2018-09-07 01:17:12.479000000 Z
+      updated_at: !ruby/object:DateTime 2018-09-07 01:17:12.479000000 Z
+    title: carousel4
+    description: 
+    url: "//images.ctfassets.net/h4gckunk8e0b/GvtTePwgkSWSMMUYIKeUS/ff3987f96eab15e895a10dc19832e2d9/carousel4.jpg"
+  carousel5_title: Walk barefoot with us
+  carousel5_text: "Barefoot College needs ongoing ambassadors like you. We invite
+    you to visit the website and consider becoming a monthly donor. There are many
+    small ways you can make a big difference. <br/>\n[Donate](https://www.barefootcollege.org/donate/?cc=usd
+    \"Donate\") \n"
+  carousel5_image:
+    sys:
+      id: 3RnxLbhCSkc4qme0igwaey
+      created_at: !ruby/object:DateTime 2018-09-07 01:24:37.461000000 Z
+      updated_at: !ruby/object:DateTime 2018-09-07 01:24:37.461000000 Z
+    title: carousel5
+    description: 
+    url: "//images.ctfassets.net/h4gckunk8e0b/3RnxLbhCSkc4qme0igwaey/c4fd70d05b01e8c772f9ab34761d431b/carousel5.jpg"
   link_facebook: https://www.facebook.com/sharer.php?u=https://www.facebook.com/fliptheswitchfilm/
   link_instagram: https://www.instagram.com/fliptheswitch_movie/
   link_website: https://fliptheswitch.film
