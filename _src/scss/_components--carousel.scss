@@ -99,35 +99,38 @@
     p {
       font-size: 14px;
     }
+    
+    a, a:visited {
+      color: #fff;
+    }
 
     &:nth-of-type(9n+1) {
       transform: rotateY(0deg) translateZ(250px);
       background: rgba(  85, 118, 53, 0.9);
     }
+    &:nth-of-type(9n+2) {
+      transform: rotateY(72deg) translateZ(250px);
+      background: hsla( 40, 100%, 50%, 0.9);
+    }
+    &:nth-of-type(9n+3) {
+      transform: rotateY(144deg) translateZ(250px);
+      background: rgba( 186, 219, 28, 0.9);
+    }
+    &:nth-of-type(9n+4) {
+      transform: rotateY(216deg) translateZ(250px);
+      background: rgba(  85, 118, 53, 0.9);
+    }
+    &:nth-of-type(9n+5) {
+      transform: rotateY(288deg) translateZ(250px);
+      background: hsla( 40, 100%, 50%, 0.9);
+    }
   }
-
-  .b {
-    transform: rotateY(72deg) translateZ(250px);
-    background: hsla( 40, 100%, 50%, 0.9);
-  }
-  .c {
-    transform: rotateY(144deg) translateZ(250px);
-    background: rgba( 186, 219, 28, 0.9);
-  }
-  .d {
-    transform: rotateY(216deg) translateZ(250px);
-    background: rgba(  85, 118, 53, 0.9);
-  }
-  .e {
-    transform: rotateY(288deg) translateZ(250px);
-    background: hsla( 40, 100%, 50%, 0.9);
-  } 
 
   .next, .prev {
     color: #748c0b;
     position: absolute;
-    top: 100px;
-    padding: 1em 2em;
+    top: 130px;
+    padding: .5em 1em;
     cursor: pointer;
     background: #b7dd0f;
     border-radius: 5px;
@@ -137,7 +140,7 @@
   }
   .next:hover, .prev:hover { color: #000; }
   .next:active, .prev:active {
-    top: 104px;
+    top: 134px;
     box-shadow: 0 1px 0 rgba(  85, 118, 53, 0.9);
   }
   .next { right: 1em; }
