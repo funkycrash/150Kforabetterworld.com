@@ -1,161 +1,167 @@
 <!doctype html>
 <html lang="en">
 
-{% assign websiteContent = site.data.contentful.spaces.donor.websiteContent[0] %}
+    {% assign websiteContent = site.data.contentful.spaces.donor.websiteContent[0] %}
 
-	<head>
-		<meta charset="utf-8">
+    <head>
+        <meta charset="utf-8">
 
-		<title>150K For a Better World</title>
-		{% include favicon.html %}
-		<link rel="stylesheet" href="/assets/css/app.min.css">
-	</head>
+        <title>150K For a Better World</title>
+        {% include favicon.html %}
+        <link href="/assets/css/app.min.css" rel="stylesheet">
+    </head>
 
-	<body>
-		{% include inline-css.html %}
-		<div id="overlay"></div>
-		<div id="loader" class="c-white" style="text-align:right;">Loading...</div>
+    <body>
+        {% include inline-css.html %}
+        <div id="overlay"></div>
+        <div class="c-white" id="loader" style="text-align:right;">Loading...</div>
 
-		<div class="foot-logo">
-			<img src="/assets/img/hl-logo-small.png" alt="">
-		</div>
- 
-		<a href="#" class="speaker">
-		  <span></span>
-		</a>
- 
-		<div class="reveal">
+        <div class="foot-logo">
+            <img alt="" src="/assets/img/hl-logo-small.png">
+        </div>
 
-			<div class="slides">
+        <a class="speaker" href="#">
+            <span></span>
+        </a>
 
-				<section id="first" style="display:none;" data-transition-speed="slow" data-background-video="/assets/video/logo.mp4" data-autoslide="5000" data-background-video-muted="true">
-					<!-- <img src="/assets/img/logo-flip.png" alt="" style="max-width:650px;"> -->
-				</section>
+        <div class="reveal">
+
+            <div class="slides">
+
+                <section data-autoslide="5000" data-background-video-muted="true" data-background-video="/assets/video/logo.mp4" data-transition-speed="slow" id="first" style="display:none;">
+                    <!-- <img src="/assets/img/logo-flip.png" alt="" style="max-width:650px;"> -->
+                </section>
 
 
-				<section data-background-color="#ffffff" data-transition-speed="slow" data-autoslide="2500">
-					<img src="/assets/img/logo-flip.png" alt="" style="max-width:650px;">
-					<h3 class="fragment fade-left c-green" data-autoslide="1500">Thank you {{page.title}}</h3>
-					<h3 class="fragment fade-right c-green bg-green" data-autoslide="1500" style="display:inline-block;">{{ websiteContent.thank_you_first_text }}</h3>
-					<h3 class="fragment fade-left c-green" data-autoslide="1500">{{ websiteContent.thank_you_second_text }}</h3>
-				</section>
+                <section data-autoslide="2500" data-background-color="#ffffff" data-transition-speed="slow">
+                    <img alt="" src="/assets/img/logo-flip.png" style="max-width:650px;">
+                    <h3 class="fragment fade-left c-green" data-autoslide="1500">Thank you
+                        {{page.title}}</h3>
+                    <h3 class="fragment fade-right c-green bg-green" data-autoslide="1500" style="display:inline-block;">{{ websiteContent.thank_you_first_text }}</h3>
+                    <h3 class="fragment fade-left c-green" data-autoslide="1500">{{ websiteContent.thank_you_second_text }}</h3>
+                </section>
 
-				<section data-background-image="/assets/img/background.jpg"  data-autoslide="4500" data-transition-speed="slow">
-						<div class="fragment fade-right" data-autoslide="1500">
-							<img src="{{websiteContent.image_quote1.url}}" class="big-image" style="width:80%;"/>
-						</div>
-						<div class="quote fragment fade-left" data-autoslide="3500">
-							<h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">{{ websiteContent.quote1 }}</h3><br/>
-							<p class="text-right">– {{ websiteContent.quote_author }}</p>
-						</div>
-						
-				</section>
+                <section data-autoslide="4500" data-background-image="/assets/img/background.jpg" data-transition-speed="slow">
+                    <div class="fragment fade-right" data-autoslide="1500">
+                        <img class="big-image" src="https://via.placeholder.com/850/000000/FFFFFF/?text=Placeholder" style="width:80%;"/>
+                    </div>
+                    <div class="quote fragment fade-left" data-autoslide="3500">
+                        <h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">{{ websiteContent.quote1 }}</h3><br/>
+                        <p class="text-right">–
+                            {{ websiteContent.quote_author }}</p>
+                    </div>
 
-				 <section data-background-image="/assets/img/background.jpg" data-transition-speed="slow" data-autoslide="1500">
-					<h3 class="c-green">{{ websiteContent.impact_stats_title }}</h3>
- 
-					<div class="grid" style="padding:50px;">
-						<div class="col-1-3 fact">
-							<span class="fragment bounce" data-autoslide="2500">
-									<img src="/assets/img/icons/lightbulb.png" class="bounce-img"/>
-									<p class="c-green">{{ websiteContent.gift_enabled1 | markdownify }}</p> 
-								</span>
-						</div> 
-						<div class="col-1-3 fact">
-							<span class="fragment bounce" data-autoslide="2500">
-								<img src="/assets/img/icons/house.png" class="bounce-img"/>
-								<p class="c-green">{{ websiteContent.gift_enabled2 | markdownify  }}</p>
-							</span>
-						</div>
-						<div class="col-1-3 fact">
-							<span class="fragment bounce"  data-autoslide="4000">
-								<img src="/assets/img/icons/women.png" class="bounce-img"/>
-								<p class="c-green">{{ websiteContent.gift_enabled3 | markdownify  }}</p>
-							</span>
-						</div>
-					</div> 
-				</section>
+                </section>
 
-				<section data-background-image="/assets/img/background.jpg" data-autoslide="4000" data-transition-speed="slow">
-						<div class="fragment fade-right" data-autoslide="1500">
-							<img src="{{websiteContent.image_quote2.url}}" class="big-image" style="width:70%;"/>
-						</div>
-						<div class="quote bg-darkgreen fragment fade-left" data-autoslide="3500">
-							<h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">{{ websiteContent.quote2 }}</h3><br/>
-							<p class="text-right">– {{ websiteContent.quote2_author }}</p>
-						</div>
-						
-				</section>
+                <section data-autoslide="1500" data-background-image="/assets/img/background.jpg" data-transition-speed="slow">
+                    <h3 class="c-green">{{ websiteContent.impact_stats_title }}</h3>
 
-				<section data-background-transition="convex" data-background-video="/assets/video/video.mp4" data-autoslide="29000" data-transition-speed="slow" data-background-video-muted="true" id="videoSlide">
-					<div style="display:block;">
-							<span id="unmuteButton" class="button" style="margin-top:35%;">{{ websiteContent.unmute_button_text }}</span>
-						</div>
-				</section>
+                    <div class="grid" style="padding:50px;">
+                        <div class="col-1-3 fact">
+                            <span class="fragment bounce" data-autoslide="2500">
+                                <img class="bounce-img" src="/assets/img/icons/lightbulb.png"/>
+                                <p class="c-green">{{ websiteContent.gift_enabled1 | markdownify }}</p>
+                            </span>
+                        </div>
+                        <div class="col-1-3 fact">
+                            <span class="fragment bounce" data-autoslide="2500">
+                                <img class="bounce-img" src="/assets/img/icons/house.png"/>
+                                <p class="c-green">{{ websiteContent.gift_enabled2 | markdownify  }}</p>
+                            </span>
+                        </div>
+                        <div class="col-1-3 fact">
+                            <span class="fragment bounce" data-autoslide="4000">
+                                <img class="bounce-img" src="/assets/img/icons/women.png"/>
+                                <p class="c-green">{{ websiteContent.gift_enabled3 | markdownify  }}</p>
+                            </span>
+                        </div>
+                    </div>
+                </section>
 
-				<section data-background-image="/assets/img/background.jpg" data-transition-speed="slow" data-autoslide="1500">
+                <section data-autoslide="4000" data-background-image="/assets/img/background.jpg" data-transition-speed="slow">
+                    <div class="fragment fade-right" data-autoslide="1500">
+                        <img class="big-image" src="https://via.placeholder.com/150/000000/FFFFFF/?text=Placeholder" style="width:70%;"/>
+                    </div>
+                    <div class="quote bg-darkgreen fragment fade-left" data-autoslide="3500">
+                        <h3 style="max-width: 640px; margin:0 auto; display: block; font-style: italic;">{{ websiteContent.quote2 }}</h3><br/>
+                        <p class="text-right">–
+                            {{ websiteContent.quote2_author }}</p>
+                    </div>
 
-				<div class="carousel-container">
-					<div class="container">
-						<div class="carousel">
-						<div class="item a">
-							<h2>{{ websiteContent.carousel1_title }}</h2>
-							<img src="/assets/img/barefoot-logo.png" width="200"/> 
-							<img src="/assets/img/hl-medium.png" width="75"/>
-							{{ websiteContent.carousel1_text | markdownify }}
-						</div>
-						<div class="item b">
-							<h2>{{ websiteContent.carousel2_title }}</h2>
-							<p><a href="https://www.youtube.com/watch?v=b9OQ85shbng&list=PLgL2AgEKYdKZar4Tu2Rf1PAD2YIU8K8kL&ab_channel=OffRoad" target="_blank">Watch #FliptheSwitch YouTube series</a> from filming on location<br/><br/>
-							  {{ websiteContent.carousel2_text | markdownify }}
-							  <h2>Share</h2>
-							<div class="share-icons">
-								  <a href="{{ websiteContent.link_facebook}}" target="_blank"><img src="/assets/img/share-facebook.png" alt=""></a>
-								  <a href="{{ websiteContent.link_instagram}}" target="_blank"><img src="/assets/img/share-instagram.png" alt=""></a>
-								  <a href="{{ websiteContent.link_website}}" target="_blank"><img src="/assets/img/share-website.png" alt=""></a>
-							  </div>
-						</div>
-						<div class="item c">
-							<h2>{{ websiteContent.carousel3_title }}</h2>
-							<div class="grid">
-								<div class="col-1-2" style="width:45%;">
-									<img src="/assets/img/bunker.jpg" width="150"/>
-								</div>
-								<div class="col-1-2 quote" style="margin-top: -180px !important; margin-right: 10px;">
-									{{ websiteContent.carousel3_text | markdownify }}
-								</div>
-							</div>
-						</div>
-						<div class="item d">
-							<h2>{{ websiteContent.carousel4_title }}</h2>
-							<div class="grid">
-								<div class="col-1-2" style="width:45%;">
-									<img src="{{ websiteContent.carousel4_image.url }}" width="150"/>
-								</div>
-								<div class="col-1-2 quote no-marks" style="margin-right: 10px;">
-									{{ websiteContent.carousel4_text | markdownify }}
-								</div>
-							</div>
-						</div>
-						<div class="item e">
-							<h2>{{ websiteContent.carousel5_title }}</h2>
-							<div class="grid">
-								<div class="col-1-2" style="width:45%;">
-									<img src="{{ websiteContent.carousel5_image.url }}" width="150"/>
-								</div>
-								<div class="col-1-2 quote no-marks" style="margin-right: 10px;">
-									{{ websiteContent.carousel5_text | markdownify }}
-								</div>
-							</div>
-						</div>
-						</div>
-					</div>
-					<div class="next">Next</div>
-					<div class="prev">Prev</div>
-				</div>
-				</section>
+                </section>
 
-				<!-- <section data-background-image="/assets/img/background.jpg" data-transition-speed="slow" data-autoslide="1500">
+                <section data-autoslide="29000" data-background-transition="convex" data-background-video-muted="true" data-background-video="/assets/video/video.mp4" data-transition-speed="slow" id="videoSlide">
+                    <div style="display:block;">
+                        <span class="button" id="unmuteButton" style="margin-top:35%;">{{ websiteContent.unmute_button_text }}</span>
+                    </div>
+                </section>
+
+                <section data-autoslide="1500" data-background-image="/assets/img/background.jpg" data-transition-speed="slow">
+
+                    <div class="carousel-container">
+                        <div class="container">
+                            <div class="carousel">
+                                <div class="item a">
+                                    <h2>{{ websiteContent.carousel1_title }}</h2>
+                                    <img src="/assets/img/barefoot-logo.png" width="200"/>
+                                    <img src="/assets/img/hl-medium.png" width="75"/>
+                                    {{ websiteContent.carousel1_text | markdownify }}
+                                </div>
+                                <div class="item b">
+                                    <h2>{{ websiteContent.carousel2_title }}</h2>
+                                    <p>
+                                        <a href="https://www.youtube.com/watch?v=b9OQ85shbng&list=PLgL2AgEKYdKZar4Tu2Rf1PAD2YIU8K8kL&ab_channel=OffRoad" target="_blank">Watch #FliptheSwitch YouTube series</a>
+                                        from filming on location<br/><br/>
+                                        {{ websiteContent.carousel2_text | markdownify }}
+                                        <h2>Share</h2>
+                                        <div class="share-icons">
+                                            <a href="{{ websiteContent.link_facebook}}" target="_blank"><img alt="" src="/assets/img/share-facebook.png"></a>
+                                            <a href="{{ websiteContent.link_instagram}}" target="_blank"><img alt="" src="/assets/img/share-instagram.png"></a>
+                                            <a href="{{ websiteContent.link_website}}" target="_blank"><img alt="" src="/assets/img/share-website.png"></a>
+                                        </div>
+                                    </p>
+                                </div>
+                                <div class="item c">
+                                    <h2>{{ websiteContent.carousel3_title }}</h2>
+                                    <div class="grid">
+                                        <div class="col-1-2" style="width:45%;">
+                                            <img src="/assets/img/bunker.jpg" width="150"/>
+                                        </div>
+                                        <div class="col-1-2 quote" style="margin-top: -180px !important; margin-right: 10px;">
+                                            {{ websiteContent.carousel3_text | markdownify }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item d">
+                                    <h2>{{ websiteContent.carousel4_title }}</h2>
+                                    <div class="grid">
+                                        <div class="col-1-2" style="width:45%;">
+                                            <img src="https://via.placeholder.com/150/000000/FFFFFF/?text=Placeholder" width="150"/>
+                                        </div>
+                                        <div class="col-1-2 quote no-marks" style="margin-right: 10px;">
+                                            {{ websiteContent.carousel4_text | markdownify }}
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="item e">
+                                    <h2>{{ websiteContent.carousel5_title }}</h2>
+                                    <div class="grid">
+                                        <div class="col-1-2" style="width:45%;">
+                                            <img src="https://via.placeholder.com/150/000000/FFFFFF/?text=Placeholder" width="150"/>
+                                        </div>
+                                        <div class="col-1-2 quote no-marks" style="margin-right: 10px;">
+                                            {{ websiteContent.carousel5_text | markdownify }}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="next">Next</div>
+                        <div class="prev">Prev</div>
+                    </div>
+                </section>
+
+                <!-- <section data-background-image="/assets/img/background.jpg" data-transition-speed="slow" data-autoslide="1500">
 					<div class="scene"> 
 						<div class="carousel">
 
@@ -251,17 +257,17 @@
 
 					<img id="btnStartAgain" src="/assets/img/startagain.png"/>
 				</section> -->
- 
-			</div> 
 
-		</div>
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
-		<script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.7/howler.core.min.js"></script>
+            </div>
 
-		<script src="/assets/js/app.min.js"></script> 
+        </div>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.7/howler.core.min.js"></script>
 
-		<script>
+        <script src="/assets/js/app.min.js"></script>
+
+        <script>
 			document.body.setAttribute("class", "noscroll");
 			document.getElementById("overlay").style.display = "block";
 			document.getElementById("loader").style.display = "block";
@@ -274,18 +280,18 @@
 			}
 		</script>
 
-		<script>
+        <script>
 			$('#btnStartAgain').on('click', function () {
 				window.location.reload(true)
 			})
 		</script>
 
-		<script>
+        <script>
 		unmuteButton.addEventListener('click', function() {
 			$("video").prop('muted', false)
 			  $(this).hide()
 		});
   		</script>
 
-	</body>
+    </body>
 </html>
